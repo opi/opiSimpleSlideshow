@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>opiSimpleSlideshow - demo</title>
+    <style type="text/css" media="screen">
+        #page {
+            margin:0 auto;
+            width:900px;
+        }
+        .container {
+            border:1px solid #999;
+            height:150px;
+            margin:15px;
+            padding:15px;
+            width:320px;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../jquery.opisimpleslideshow.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('#demo div.container').opiSimpleSlideshow({
+                interval: 1200,
+                speed: 300
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="page">
+        <h1>opiSimpleSlideshow - demo</h1>
+        <p>
+        This is a demo of <a href="http://opisimpleslideshow.532px.com">opiSimpleSlideshow</a>.
+        </p>
+        <div id="demo">
+            <div class="container">
+                <img src="img/img1.jpg" alt="img1" />
+                <img src="img/img2.jpg" alt="img2" />
+                <img src="img/img3.jpg" alt="img3" />
+                <img src="img/img4.jpg" alt="img4" />
+            </div>
+        </div>
+        <p>Usage:</p>
+        <pre>
+$('div.container').opiSimpleSlideshow({
+    interval: 1200,
+    speed: 300
+});
+        </pre>
+    </div>
+</body>
+</html>
